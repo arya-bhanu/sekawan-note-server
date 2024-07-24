@@ -1,9 +1,8 @@
 import express from 'express';
-import { AdminRouter } from './admin.route';
+import { AdminRoute } from './admin.route';
 
 const router = express.Router();
 
-router.use('/admin', AdminRouter);
-
+router.use('/admin', AdminRoute);
 
 export { router as IndexRoute };
